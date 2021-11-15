@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="app-header">
+        <div class="header-container">
+            <span id="password">j$FQf3oQ5qf!X2fqSo*ow</span> 
+            <button id="copy-btn"><img src="./copy.png" alt="copy to clipboard"></button>
+        </div>
+      </div>
+      <div class="app-body">
+          <div class="form-ctrl"><label for="length">Contain lowercase letters</label><input type="number" min="3" max="100" value="10" id="length"></input></div>
+          <div class="form-ctrl"><label for="lower">Contain lowercase letters</label><input type="checkbox" id="lower"></input></div>
+          <div class="form-ctrl"><label for="upper">Contain uppercase letters</label><input type="checkbox" id="upper"></input></div>
+          <div class="form-ctrl"><label for="number">Contain numbers</label><input type="checkbox" id="number"></input></div>
+          <div class="form-ctrl"><label for="special">Contain special signs</label><input type="checkbox" id="special"></input></div>
+          <button class="generate-btn" id="generate-btn">Generate password</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
